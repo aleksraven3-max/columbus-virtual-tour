@@ -9,14 +9,15 @@
   <autorotate speed="0.10" delay="5.00" returntohorizon="0.000" startloaded="0"/>
   <userdata title="Модуль «Колумб» (Columbus)" description="Науковий модуль Європейського космічного агентства (ESA) на Міжнародній космічній станції." author="ESA / Європейське космічне агентство" copyright="ESA" datetime="2026"/>
   
-  <hotspots width="220" height="40" wordwrap="1">
-    <label enabled="1" textcolor="0xffffff" backgroundcolor="0x000000" backgroundalpha="0.85" bordercolor="0x00aaff" borderalpha="1" roundedge="5"/>
+  <hotspots width="180" height="20" wordwrap="1">
+    <label enabled="1" textcolor="0xffffff" backgroundcolor="0x000000" backgroundalpha="0.8" bordercolor="0xffffff" borderalpha="1" roundedge="5"/>
     <polystyle mode="0" backgroundcolor="0x0000ff" backgroundalpha="0.4" bordercolor="0x0000ff" borderalpha="1"/>
     
-    <hotspot id="hs_biolab" pan="-45.2" tilt="12.5" title="Лабораторія Biolab: біологічні експерименти в невагомості" url="javascript:void(0);"/>
-    <hotspot id="hs_fsl" pan="15.8" tilt="-8.3" title="Лабораторія фізики рідин (FSL)" url="javascript:void(0);"/>
-    <hotspot id="hs_emcs" pan="82.1" tilt="5.4" title="Європейська система розведення рослин (EMCS)" url="javascript:void(0);"/>
-    <hotspot id="hs_edr" pan="-120.4" tilt="-15.2" title="Європейська багатоцільова наукова стійка (EDR)" url="javascript:void(0);"/>
-    <hotspot id="hs_epl" pan="160.0" tilt="2.1" title="Стійка фізіології людини (EPM)" url="javascript:void(0);"/>
+    <!-- Перекладені точки інтересу (Hotspots) -->
+    <hotspot id="hs_biolab" pan="-45.2" tilt="12.5" title="Лабораторія Biolab" url="javascript:openUrl('https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration/Columbus/Biolab');" target="_blank"/>
+    <hotspot id="hs_fsl" pan="15.8" tilt="-8.3" title="Лабораторія фізики рідин (FSL)" url="javascript:openUrl('https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration/Columbus/Fluid_Science_Laboratory');" target="_blank"/>
+    <hotspot id="hs_emcs" pan="82.1" tilt="5.4" title="Європейська система розведення рослин (EMCS)" url="javascript:openUrl('https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration/Columbus');" target="_blank"/>
+    <hotspot id="hs_edr" pan="-120.4" tilt="-15.2" title="Європейська стійка для експериментів (EDR)" url="javascript:openUrl('https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration/Columbus');" target="_blank"/>
+    <hotspot id="hs_epl" pan="160.0" tilt="2.1" title="Стійка фізіології людини (EPM)" url="javascript:openUrl('https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration/Columbus');" target="_blank"/>
   </hotspots>
 </panorama>

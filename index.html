@@ -2,8 +2,8 @@
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
-    <title>Віртуальний тур МКС — Модуль «Колумб» (Українською)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Віртуальний тур МКС — Модуль «Колумб»</title>
     <style>
         * {
             margin: 0;
@@ -14,114 +14,57 @@
             width: 100%;
             height: 100%;
             overflow: hidden;
-            background-color: #000;
-            font-family: Arial, Helvetica, sans-serif;
+            background-color: #0b0b0b;
+            font-family: Arial, sans-serif;
         }
-        #container {
-            width: 100%;
-            height: 100%;
-        }
-        #ibvwp {
-            display: none;
-            background-color: rgba(0, 0, 0, 0.85);
-            padding: 12px;
-            position: fixed;
-            top: 40px;
-            left: 50%;
-            transform: translateX(-50%);
-            z-index: 10000;
-            border-radius: 8px;
-            color: #fff;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
-        }
-        .info-panel {
+        .header-bar {
             position: absolute;
-            bottom: 20px;
-            left: 20px;
-            background: rgba(0, 24, 48, 0.85);
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(0, 15, 30, 0.9);
             color: #ffffff;
-            padding: 12px 18px;
-            border-radius: 8px;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 10;
+            border-bottom: 1px solid rgba(0, 170, 255, 0.3);
             font-size: 14px;
-            pointer-events: none;
-            z-index: 1000;
-            border: 1px solid rgba(255,255,255,0.2);
         }
-        .info-panel h1 {
+        .header-bar h1 {
             font-size: 16px;
-            margin-bottom: 4px;
             color: #00aaff;
         }
+        .tour-container {
+            position: absolute;
+            top: 45px;
+            left: 0;
+            width: 100%;
+            height: calc(100% - 45px);
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
     </style>
-
-    <!-- Скрипти плеєра Pano2VR -->
-    <script type="text/javascript" src="https://esamultimedia.esa.int/multimedia/virtual-tour-columbus/pano2vr_player.js" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="https://esamultimedia.esa.int/multimedia/virtual-tour-columbus/skin.js" crossorigin="anonymous"></script>
-    
-    <script type="text/javascript">
-        function openVideo(id) {
-            var ss = '<div><iframe src="https://wsn.spaceflight.esa.int/php/seidvideo.php?seid=' + id + '" width="700" height="430" style="border:0;" scrolling="no"></iframe></div>';
-            ss += '<div style="text-align:center;color:white;padding-top:10px;font-size:13px;"><a href="javascript:closeVideo();" style="color:#00aaff;text-decoration:none;font-weight:bold;">✕ ЗАКРИТИ ВІДЕО</a></div>';
-            var ref = document.getElementById("ibvwp");
-            if (ref) {
-                ref.innerHTML = ss;
-                ref.style.display = "block";
-            }
-        }
-                    
-        function closeVideo() {
-            var ref = document.getElementById("ibvwp");
-            if (ref) {
-                ref.style.display = "none";
-                ref.innerHTML = "";
-            }
-        }
-        
-        function openTab(id) { 
-            window.open(id, '_blank');  
-        }
-        
-        function openUrl(id) {
-            var ss = '<div><iframe src="' + id + '" width="700" height="430" style="border:0;" scrolling="yes"></iframe></div>';
-            ss += '<div style="text-align:center;color:white;padding-top:10px;font-size:13px;"><a href="javascript:closeVideo();" style="color:#ff5555;margin-right:25px;text-decoration:none;font-weight:bold;">✕ ЗАКРИТИ</a><a href="javascript:openTab(''+id+'');" style="color:#00aaff;text-decoration:none;font-weight:bold;">❐ ВІДКРИТИ НА ВЕСЬ ЕКРАН</a></div>';
-            var ref = document.getElementById("ibvwp");
-            if (ref) {
-                ref.innerHTML = ss;
-                ref.style.display = "block";
-            }
-        }
-    </script>
 </head>
 <body>
-    <div id="container"></div>
-    <div id="ibvwp"></div>
 
-    <div class="info-panel">
-        <h1>Модуль «Колумб» (Columbus) — МКС</h1>
-        <p>Використовуйте мишку або тачскрін для навігації 360°</p>
+    <div class="header-bar">
+        <h1>Науковий модуль «Колумб» (Columbus) — МКС</h1>
+        <span>Європейське космічне агентство (ESA)</span>
     </div>
 
-    <script type="text/javascript">
-        function initPanorama() {
-            try {
-                if (typeof pano2vrPlayer === 'function') {
-                    pano = new pano2vrPlayer("container");
-                    if (typeof pano2vrSkin === 'function') {
-                        skin = new pano2vrSkin(pano);
-                    }
-                    // Завантаження локального українськомовного USOS.xml
-                    pano.readConfigUrl("USOS.xml");
-                }
-            } catch(e) {
-                console.error("Помилка завантаження панорами: ", e);
-            }
-        }
+    <div class="tour-container">
+        <iframe 
+            src="https://esamultimedia.esa.int/multimedia/virtual-tour-columbus/" 
+            allowfullscreen="true" 
+            webkitallowfullscreen="true" 
+            mozallowfullscreen="true">
+        </iframe>
+    </div>
 
-        if (document.readyState === 'complete' || document.readyState === 'interactive') {
-            setTimeout(initPanorama, 100);
-        } else {
-            window.addEventListener('DOMContentLoaded', initPanorama);
-        }
-    </script>
 </body>
 </html>

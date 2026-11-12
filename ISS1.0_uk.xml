@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tour start="node1">
+<panorama id="node1" hideabout="1">
+<view fovmode="0" pannorth="90">
+<start pan="86" fov="70" tilt="0"/>
+<min pan="0" fov="5" tilt="-90"/>
+<max pan="360" fov="70" tilt="90"/>
+</view>
+<userdata title="Віртуальний тур МКС 1.0" datetime="" description="Columbus (Європейська лабораторія)" copyright="ESA" tags="" author="ESA" source="" comment="" info="" longitude="" latitude=""/>
+<hotspots width="180" height="0" wordwrap="1">
+<label width="180" backgroundalpha="1" enabled="1" height="0" backgroundcolor="0xffffff" bordercolor="0x000000" border="1" textcolor="0x000000" background="1" borderalpha="1" borderradius="1" wordwrap="1" textalpha="1"/>
+<polystyle mode="0" backgroundalpha="0.2509803921568627" backgroundcolor="0x0000ff" bordercolor="0x0000ff" borderalpha="1"/>
+<hotspot title="Перейти до Node 2 (Harmony)" target="242/-6/70" pan="-90.0257" skinid="goup" url="{node5}" id="toNode2" tilt="-0.254198"/>
+<hotspot title="Biolab — для біологічних експериментів із мікроорганізмами, клітинами, малими рослинами та безхребетними." target="_self" pan="-27.3246" skinid="video" url="javascript:openVideo('MTQzNTc0MDQ2NQ');" id="Biolab" tilt="7.08843"/>
+<hotspot title="Поручні, напрямні для сидінь і фіксатори для ніг." target="_self" pan="-4.04981" skinid="video" url="javascript:openVideo('MTQzNTc0MDQ3Ng');" id="Handrails" tilt="15.3027"/>
+<hotspot title="Люк модуля Columbus" target="_self" pan="-90.563" skinid="video" url="javascript:openVideo('MTQzNTc0MDQ4OQ');" id="Hatch" tilt="15.7634"/>
+<hotspot title="Muscle Atrophy Research and Exercise System (MARES) — універсальний пристрій «три в одному» для вимірювання м’язової сили, який стежить за станом астронавтів." target="_self" pan="152.186" skinid="video" url="javascript:openVideo('MTQzNTc0MDQ5Mw');" id="MARES" tilt="4.16582"/>
+<hotspot title="Стелаж для зберігання в Columbus" target="_self" pan="-104.439" skinid="video" url="javascript:openVideo('MTQzNTc0MDUwNA');" id="Stowage rack" tilt="69.302"/>
+<hotspot title="Привіт! Мене звати Паксі. Я дослідник з іншої планети!" target="_self" pan="-114.391" skinid="html" url="javascript:openUrl('http://www.esa.int/esaKIDSen/SEM98W81UGH_OurUniverse_0.html');" id="Paxi" tilt="-8.01785"/>
+<hotspot title="Fluid Science Laboratory — установка для вивчення рідин у невагомості." target="_self" pan="-90.8447" skinid="html" url="javascript:openUrl('http://www.esa.int/Our_Activities/Human_Spaceflight/Columbus/Fluid_Science_Laboratory');" id="FSL" tilt="34.1985"/>
+<hotspot title="European Physiology Module — для дослідження впливу космічного польоту на людину." target="_self" pan="24.5146" skinid="html" url="javascript:openUrl('http://www.esa.int/Our_Activities/Human_Spaceflight/Columbus/European_Physiology_Modules');" id="EPM" tilt="14.5639"/>
+<hotspot title="European Drawer Rack — стелаж для експериментів з багатьох наукових дисциплін." target="_self" pan="-124.095" skinid="html" url="javascript:openUrl('http://www.esa.int/Our_Activities/Human_Spaceflight/Columbus/European_Drawer_Rack');" id="EDR" tilt="4.28466"/>
+</hotspots>
+<media/>
+<input width="3353" height="3353" leveltilesize="512" levelbias="0.400" overlap="1" leveltileurl="tiles/Columbus_18_sRGB MASTER/c%c_l%r_%y_%x.jpg">
+<level width="3353" height="3353" preload="0"/>
+<level width="1677" height="1677" preload="0"/>
+<level width="839" height="839" preload="0"/>
+<level width="209" preview="1" height="209" preload="1"/>
+<preview color="0x808080"/>
+</input>
+<control simulatemass="1" lockedmouse="0" lockedkeyboard="0" dblclickfullscreen="0" invertwheel="0" lockedwheel="0" invertcontrol="1" speedwheel="1" sensitivity="8"/>
+</panorama>
+<panorama id="node3" hideabout="1">
+<view fovmode="0" pannorth="-90">
+<start pan="0" fov="70" tilt="0"/>
+<min pan="0" fov="5" tilt="-90"/>
+<max pan="360" fov="70" tilt="90"/>
+</view>
+<userdata title="Віртуальний тур МКС 1.0" datetime="" description="Kibo (Японська лабораторія)" copyright="ESA" tags="" author="ESA" source="" comment="" info="" longitude="" latitude=""/>
+<hotspots width="180" height="0" wordwrap="1">
+<label width="180" backgroundalpha="1" enabled="1" height="0" backgroundcolor="0xffffff" bordercolor="0x000000" border="1" textcolor="0x000000" background="1" borderalpha="1" borderradius="1" wordwrap="1" textalpha="1"/>
+<polystyle mode="0" backgroundalpha="0.2509803921568627" backgroundcolor="0x0000ff" bordercolor="0x0000ff" borderalpha="1"/>
+<hotspot title="Перейти до Node 2 (Harmony)" target="113.5/-7.5/70" pan="176.232" skinid="goup" url="{node5}" id="toNode2" tilt="-1.23401"/>
+<hotspot title="Шлюз Kibo використовують для виносу експериментів за межі космічної станції." target="_self" pan="-0.166914" skinid="video" url="javascript:openVideo('MTQzNTc0MDUxNQ');" id="Airlock" tilt="-19.2064"/>
+<hotspot title="Мікрофон для зв’язку між космосом і Землею." target="_self" pan="93.5508" skinid="video" url="javascript:openVideo('MTQzNTc0MDUzMA');" id="Communications" tilt="22.6126"/>
+<hotspot title="MELFI (Minus Eighty Laboratory Freezer for the ISS) — морозильник на −80 °C для зберігання та швидкого заморожування зразків." target="_self" pan="179.673" skinid="video" url="javascript:openVideo('MTQzNTc0MDUzOQ');" id="MELFI" tilt="-26.5613"/>
+<hotspot title="Система вентиляції станції підтримує комфортну атмосферу." target="_self" pan="20.6417" skinid="video" url="javascript:openVideo('MTQzNTc0MDU0OQ');" id="Ventilation" tilt="28.8803"/>
+<hotspot title="Experiment Logistics Module-Pressurized Section — для зберігання експериментів, зразків і запасних частин." target="_self" pan="-17.118" skinid="html" url="javascript:openUrl('http://iss.jaxa.jp/en/kibo/about/kibo/jlp/');" id="ELM-PS" tilt="78.8088"/>
+<hotspot title="Пульт керування роботизованим маніпулятором" target="_self" pan="107.484" skinid="html" url="javascript:openUrl('http://iss.jaxa.jp/en/kibo/about/kibo/rms/');" id="roboarm" tilt="-5.61789"/>
+<hotspot title="Вікна Kibo" target="_self" pan="-21.863" skinid="video" url="javascript:openVideo('MTQzOTkwNDU1OA');" id="windows" tilt="5.27619"/>
+<hotspot title="Стійки для наукових експериментів" target="_self" pan="163.973" skinid="video" url="javascript:openVideo('MTQzOTkwNDg4NA');" id="scienceracks" tilt="0.111661"/>
+<hotspot title="Заглянь у склад Kibo: Japanese Experiment Logistics Module, Pressurized Section (JLP)" target="_self" pan="-45.449" skinid="video" url="javascript:openVideo('MTQzOTk5ODY2MQ');" id="elmpsvideo" tilt="74.399"/>
+</hotspots>
+<media/>
+<input width="3353" height="3353" leveltilesize="512" levelbias="0.400" overlap="1" leveltileurl="tiles/Kibo Panorama/c%c_l%r_%y_%x.jpg">
+<level width="3353" height="3353" preload="0"/>
+<level width="1677" height="1677" preload="0"/>
+<level width="839" height="839" preload="0"/>
+<level width="209" preview="1" height="209" preload="1"/>
+<preview color="0x808080"/>
+</input>
+<control simulatemass="1" lockedmouse="0" lockedkeyboard="0" dblclickfullscreen="0" invertwheel="0" lockedwheel="0" invertcontrol="1" speedwheel="1" sensitivity="8"/>
+</panorama>
+<panorama id="node5" hideabout="1">
+<view fovmode="0" pannorth="180">
+<start pan="0" fov="70" tilt="0"/>
+<min pan="0" fov="5" tilt="-90"/>
+<max pan="360" fov="70" tilt="90"/>
+</view>
+<userdata title="Віртуальний тур МКС 1.0" datetime="" description="Node 2 — Harmony" copyright="ESA" tags="" author="ESA" source="" comment="" info="" longitude="" latitude=""/>
+<hotspots width="180" height="0" wordwrap="1">
+<label width="180" backgroundalpha="1" enabled="1" height="0" backgroundcolor="0xffffff" bordercolor="0x000000" border="1" textcolor="0x000000" background="1" borderalpha="1" borderradius="1" wordwrap="1" textalpha="1"/>
+<polystyle mode="0" backgroundalpha="0.2509803921568627" backgroundcolor="0x0000ff" bordercolor="0x0000ff" borderalpha="1"/>
+<hotspot title="Перейти до Columbus" target="" pan="144.346" skinid="goright" url="{node1}" id="toCol" tilt="-2.34187"/>
+<hotspot title="Перейти до Kibo" target="" pan="-148.399" skinid="goleft" url="{node3}" id="toKibo" tilt="-1.90595"/>
+<hotspot title="Вогнегасник і аварійне обладнання." target="_self" pan="-158.405" skinid="video" url="javascript:openVideo('MTQzNTc0MDU2Ng');" id="Fire estinguisher" tilt="7.70012"/>
+<hotspot title="Трекер показує астронавтам, де станція перебуває над Землею." target="_self" pan="130.918" skinid="video" url="javascript:openVideo('MTQzNTc0MDU4Mg');" id="ISS Tracker" tilt="13.6634"/>
+<hotspot title="Maintenance Work Area — верстак для базового технічного обслуговування." target="_self" pan="87.8945" skinid="" url="javascript:openVideo('MTQzNTc0MDU5NQ');" id="MWA" tilt="-16.7273"/>
+<hotspot title="Каюти екіпажу." target="_self" pan="-45.8733" skinid="video" url="javascript:openVideo('MTQzNDAxMTQwNg');" id="ISS crew quarters" tilt="-3.98813"/>
+<hotspot title="Камера IMAX для зйомок життя в космосі." target="_self" pan="-150.086" skinid="html" url="javascript:openUrl('http://www.nasa.gov/mission_pages/station/research/experiments/1872.html');" id="imax" tilt="40.7313"/>
+<hotspot title="Трекер ESA: де зараз Міжнародна космічна станція?" target="_self" pan="126.157" skinid="html" url="javascript:openUrl('http://www.esa.int/Our_Activities/Human_Spaceflight/International_Space_Station/Where_is_the_International_Space_Station');" id="esatracker" tilt="12.3202"/>
+<hotspot title="Перейти до Destiny" target="0/0/70" pan="0.756387" skinid="goup" url="{node6}" id="gotolab" tilt="-2.89188"/>
+<hotspot title="Надирний порт модуля Node 2: сюди стикуються вантажні кораблі постачання." target="_self" pan="177.758" skinid="video" url="javascript:openVideo('MTQzNjg2NTIyMg');" id="nadir" tilt="-36.7805"/>
+</hotspots>
+<media/>
+<input width="3353" height="3353" leveltilesize="512" levelbias="0.400" overlap="1" leveltileurl="tiles/Node2 Panorama/c%c_l%r_%y_%x.jpg">
+<level width="3353" height="3353" preload="0"/>
+<level width="1677" height="1677" preload="0"/>
+<level width="839" height="839" preload="0"/>
+<level width="209" preview="1" height="209" preload="1"/>
+<preview color="0x808080"/>
+</input>
+<control simulatemass="1" lockedmouse="0" lockedkeyboard="0" dblclickfullscreen="0" invertwheel="0" lockedwheel="0" invertcontrol="1" speedwheel="1" sensitivity="8"/>
+</panorama>
+<panorama id="node6" hideabout="1">
+<view fovmode="0" pannorth="0">
+<start pan="0" fov="70" tilt="0"/>
+<min pan="0" fov="5" tilt="-90"/>
+<max pan="360" fov="70" tilt="90"/>
+</view>
+<userdata title="Віртуальний тур МКС 1.0" datetime="" description="Destiny (Американська лабораторія)" copyright="ESA" tags="" author="ESA" source="" comment="" info="" longitude="" latitude=""/>
+<hotspots width="180" height="0" wordwrap="1">
+<label width="180" backgroundalpha="1" enabled="1" height="0" backgroundcolor="0xffffff" bordercolor="0x000000" border="1" textcolor="0x000000" background="1" borderalpha="1" borderradius="1" wordwrap="1" textalpha="1"/>
+<polystyle mode="0" backgroundalpha="0.2509803921568627" backgroundcolor="0x0000ff" bordercolor="0x0000ff" borderalpha="1"/>
+<hotspot title="Перейти до Node 2 (Harmony)" target="182.5/-4/70" pan="178.071" skinid="goup" url="{node5}" id="gotonode2" tilt="-0.93147"/>
+<hotspot title="Перейти до Node 1 (Unity)" target="0/0/70" pan="-1.11427" skinid="goup" url="{node7}" id="gotonode1" tilt="-0.990305"/>
+<hotspot title="Фізичні вправи в космосі важливі для здоров’я. Їзда на велотренажері станції — один зі способів підтримувати форму." target="_self" pan="-163.141" skinid="video" url="javascript:openVideo('MTQzNjg2NTY5Ng');" id="bicycle" tilt="-16.0888"/>
+<hotspot title="Що робити у разі медичних надзвичайних ситуацій на МКС." target="_self" pan="-4.92348" skinid="video" url="javascript:openVideo('MTQzNjg2NTc1Ng');" id="medical" tilt="-45.5091"/>
+<hotspot title="Дозатор води: для пиття, регідратації їжі, чаю й кави." target="_self" pan="147.15" skinid="video" url="javascript:openVideo('MTQzNjg2NTg3Ng');" id="waterdispenser" tilt="49.5508"/>
+<hotspot title="Роботизована робоча станція для керування маніпулятором Canadarm2 зовні космічної станції." target="_self" pan="-50.7185" skinid="video" url="javascript:openVideo('MTQzOTk5OTI5MQ');" id="robotics" tilt="-0.466296"/>
+<hotspot title="Microgravity Science Glovebox (MSG) від ESA дає змогу астронавтам на МКС проводити широкий спектр експериментів у повністю герметичному контрольованому середовищі." target="_self" pan="157.058" skinid="html" url="javascript:openUrl('http://www.esa.int/Our_Activities/Human_Spaceflight/Columbus/Microgravity_Science_Glovebox');" id="msg" tilt="-1.3011"/>
+<hotspot title="Експеримент Amine Swingbed випробовує в космосі системи очищення повітря на основі амінів." target="_self" pan="-104.734" skinid="html" url="javascript:openUrl('http://www.nasa.gov/mission_pages/station/research/experiments/967.html');" id="amine" tilt="-8.44584"/>
+</hotspots>
+<media/>
+<input width="3353" height="3353" leveltilesize="512" levelbias="0.400" overlap="1" leveltileurl="tiles/Lab Panorama/c%c_l%r_%y_%x.jpg">
+<level width="3353" height="3353" preload="0"/>
+<level width="1677" height="1677" preload="0"/>
+<level width="839" height="839" preload="0"/>
+<level width="209" preview="1" height="209" preload="1"/>
+<preview color="0x808080"/>
+</input>
+<control simulatemass="1" lockedmouse="0" lockedkeyboard="0" dblclickfullscreen="0" invertwheel="0" lockedwheel="0" invertcontrol="1" speedwheel="1" sensitivity="8"/>
+</panorama>
+<panorama id="node7" hideabout="1">
+<view fovmode="0" pannorth="0">
+<start pan="0" fov="70" tilt="0"/>
+<min pan="0" fov="5" tilt="-90"/>
+<max pan="360" fov="70" tilt="90"/>
+</view>
+<userdata title="Віртуальний тур МКС 1.0" datetime="" description="Node 1 — Unity" copyright="ESA" tags="" author="ESA" source="" comment="" info="" longitude="" latitude=""/>
+<hotspots width="180" height="0" wordwrap="1">
+<label width="180" backgroundalpha="1" enabled="1" height="0" backgroundcolor="0xffffff" bordercolor="0x000000" border="1" textcolor="0x000000" background="1" borderalpha="1" borderradius="1" wordwrap="1" textalpha="1"/>
+<polystyle mode="0" backgroundalpha="0.2509803921568627" backgroundcolor="0x0000ff" bordercolor="0x0000ff" borderalpha="1"/>
+<hotspot title="Перейти до Destiny" target="178/-5.5/70" pan="176.634" skinid="goup" url="{node6}" id="gotodestiny" tilt="-2.70693"/>
+<hotspot title="Перейти до Node 3 (Tranquility)" target="267/6.5/70" pan="-89.3706" skinid="goup" url="{node8}" id="gotonode3" tilt="-4.44457"/>
+<hotspot title="Шлюз, де готуються й завершуються всі американські виходи у відкритий космос." target="_self" pan="85.7942" skinid="video" url="javascript:openVideo('MTQzNjg2NDYzMw');" id="node1airlock" tilt="-1.07006"/>
+<hotspot title="Compound Specific Analyzer-Combustion Products виявляє небезпечні гази." target="_self" pan="15.4609" skinid="video" url="javascript:openVideo('MTQzNjg2NTA0Mg');" id="firedetectors" tilt="9.53083"/>
+<hotspot title="Піч Міжнародної космічної станції." target="_self" pan="40.1865" skinid="video" url="javascript:openVideo('MTQzNjg2NTA5NQ');" id="foodwarmer" tilt="2.86254"/>
+<hotspot title="Герметичний перехідний адаптер (PMA) з’єднує російську частину станції з іншими модулями." target="_self" pan="-3.10034" skinid="video" url="javascript:openVideo('MTQzNjg2NTI3MA');" id="PMA1" tilt="-9.11242"/>
+<hotspot title="Головний ящик з інструментами станції містить інструменти для обслуговування та ремонту." target="_self" pan="-1.19796" skinid="video" url="javascript:openVideo('MTQzNjg2NTM4MQ');" id="toolbox" tilt="-29.3399"/>
+<hotspot title="Астронавт NASA Скотт Келлі." target="_self" pan="168.157" skinid="html" url="javascript:openUrl('https://www.nasa.gov/1ym');" id="kelly" tilt="4.43559"/>
+<hotspot title="Ця зона присвячена пам’яті загиблих астронавтів." target="_blank" pan="94.1143" skinid="html" url="" id="sts-107" tilt="31.1944"/>
+<hotspot title="Усі астронавти станції залишають у модулі Node 1 нашивки своїх експедицій." target="_self" pan="-44.3339" skinid="html" url="javascript:openUrl('http://www.nasa.gov/mission_pages/station/expeditions/past.html');" id="patches" tilt="-1.82085"/>
+<hotspot title="Перейти до Zarya (Зоря)" target="77/-10.5/70" pan="-1.68911" skinid="goup" url="{node9}" id="Gotozarya" tilt="8.09653"/>
+</hotspots>
+<media/>
+<input width="3353" height="3353" leveltilesize="512" levelbias="0.400" overlap="1" leveltileurl="tiles/Node 1 Panorama brighter/c%c_l%r_%y_%x.jpg">
+<level width="3353" height="3353" preload="0"/>
+<level width="1677" height="1677" preload="0"/>
+<level width="839" height="839" preload="0"/>
+<level width="209" preview="1" height="209" preload="1"/>
+<preview color="0x808080"/>
+</input>
+<control simulatemass="1" lockedmouse="0" lockedkeyboard="0" dblclickfullscreen="0" invertwheel="0" lockedwheel="0" invertcontrol="1" speedwheel="1" sensitivity="8"/>
+</panorama>
+<panorama id="node8" hideabout="1">
+<view fovmode="0" pannorth="0">
+<start pan="269" fov="70" tilt="-79"/>
+<min pan="0" fov="5" tilt="-90"/>
+<max pan="360" fov="70" tilt="90"/>
+</view>
+<userdata title="Віртуальний тур МКС 1.0" datetime="" description="Node 3 — Tranquility" copyright="ESA" tags="" author="ESA" source="" comment="" info="" longitude="" latitude=""/>
+<hotspots width="180" height="0" wordwrap="1">
+<label width="180" backgroundalpha="1" enabled="1" height="0" backgroundcolor="0xffffff" bordercolor="0x000000" border="1" textcolor="0x000000" background="1" borderalpha="1" borderradius="1" wordwrap="1" textalpha="1"/>
+<polystyle mode="0" backgroundalpha="0.2509803921568627" backgroundcolor="0x0000ff" bordercolor="0x0000ff" borderalpha="1"/>
+<hotspot title="Перейти до Node 1 (Unity)" target="89.5/-5.5/70" pan="86.8915" skinid="goup" url="{node7}" id="gotonode1" tilt="0.922192"/>
+<hotspot title="Зберігання води." target="_self" pan="-102.401" skinid="video" url="javascript:openVideo('MTQzNjg2NTY0NA');" id="waterbalance" tilt="10.9059"/>
+<hotspot title="Модуль для зберігання Leonardo (Permanent Multipurpose Module) — модифікований модуль, яким космічні шатли доправляли вантажі на станцію." target="_self" pan="176.334" skinid="video" url="javascript:openVideo('MTQzNjg2NTU3Nw');" id="PMM" tilt="9.41843"/>
+<hotspot title="Санітарно-гігієнічна зона станції." target="_self" pan="123.865" skinid="video" url="javascript:openVideo('MTQzNDAxMTM5Mg');" id="bathroom" tilt="22.4556"/>
+<hotspot title="Один із двох туалетів станції. Другий — у російському сегменті." target="_self" pan="93.4514" skinid="video" url="javascript:openVideo('MTQyOTYwNjQ2OA');" id="toilet" tilt="19.182"/>
+<hotspot title="Відео з прискореною зйомкою (таймлапс), зняте з Cupola" target="_self" pan="-178.628" skinid="video" url="javascript:openVideo('MTQxNzE3MDg1Ng');" id="cupola" tilt="-81.3954"/>
+<hotspot title="Advanced Resistive Exercise Device (ARED) — універсальний тренажер для силових вправ, створений для умов невагомості." target="_self" pan="7.87203" skinid="html" url="javascript:openUrl('http://www.nasa.gov/mission_pages/station/research/experiments/1001.html');" id="ared" tilt="40.2805"/>
+<hotspot title="Cupola — оглядовий купол із семи вікон з видом на нашу планету. Через нього також спостерігають за кораблями, що наближаються." target="_self" pan="106.871" skinid="video" url="javascript:openVideo('MTQzOTk5Nzc4Mg');" id="Cupolaintro" tilt="-83.4126"/>
+<hotspot title="Дивитися, як працює ARED" target="_self" pan="-13.4127" skinid="video" url="javascript:openVideo('MTQ0MDE0NjU3Nw');" id="aredvideo" tilt="40.4781"/>
+<hotspot title="Астронавтка ESA Саманта Крістофореті" target="_self" pan="-177.56" skinid="html" url="javascript:openUrl('http://www.esa.int/Our_Activities/Human_Spaceflight/Astronauts/Samantha_Cristoforetti');" id="sam" tilt="-64.3644"/>
+</hotspots>
+<media/>
+<input width="3353" height="3353" leveltilesize="512" levelbias="0.400" overlap="1" leveltileurl="tiles/node3_10_7_sRGB_leveled brigther/c%c_l%r_%y_%x.jpg">
+<level width="3353" height="3353" preload="0"/>
+<level width="1677" height="1677" preload="0"/>
+<level width="839" height="839" preload="0"/>
+<level width="209" preview="1" height="209" preload="1"/>
+<preview color="0x808080"/>
+</input>
+<control simulatemass="1" lockedmouse="0" lockedkeyboard="0" dblclickfullscreen="0" invertwheel="0" lockedwheel="0" invertcontrol="1" speedwheel="1" sensitivity="8"/>
+</panorama>
+<panorama id="node9" hideabout="1">
+<view fovmode="0" pannorth="0">
+<start pan="264" fov="70" tilt="-10"/>
+<min pan="0" fov="5" tilt="-90"/>
+<max pan="360" fov="70" tilt="90"/>
+</view>
+<userdata title="Віртуальний тур МКС 1.0" datetime="" description="Zarya (Зоря) — FGB" copyright="" tags="" author="ESA" source="" comment="" info="" longitude="" latitude=""/>
+<hotspots width="180" height="0" wordwrap="1">
+<label width="180" backgroundalpha="1" enabled="1" height="0" backgroundcolor="0xffffff" bordercolor="0x000000" border="1" textcolor="0x000000" background="1" borderalpha="1" borderradius="1" wordwrap="1" textalpha="1"/>
+<polystyle mode="0" backgroundalpha="0.2509803921568627" backgroundcolor="0x0000ff" bordercolor="0x0000ff" borderalpha="1"/>
+<hotspot title="Перейти до Zvezda (Зірка)" target="2.5/-11/70" pan="88.2132" skinid="goup" url="{node10}" id="Gotozvezda" tilt="-1.59075"/>
+<hotspot title="Перейти до Node 1 (Unity)" target="178.5/-2.5/70" pan="-93.3104" skinid="goup" url="{node7}" id="Gotonode1" tilt="1.87774"/>
+<hotspot title="Відвідати модуль MRM-1 і корабель «Союз»" target="_self" pan="-97.5401" skinid="video" url="javascript:openVideo('MTQzOTk3Mzc0NA');" id="Soyuz" tilt="-3.99458"/>
+<hotspot title="Люки російського сегмента" target="_self" pan="-88.9808" skinid="video" url="javascript:openVideo('MTQzOTkwNDI1MA');" id="Fronthatch" tilt="-3.99423"/>
+<hotspot title="Аміачні респіратори" target="_self" pan="-93.1308" skinid="video" url="javascript:openVideo('MTQzOTkwNDA4Mw');" id="Ammonia" tilt="8.81676"/>
+<hotspot title="Склад" target="_self" pan="-93.3177" skinid="video" url="javascript:openVideo('MTQzOTkwMzU0Mw');" id="Stowage" tilt="-17.3831"/>
+<hotspot title="Політ до модуля «Пірс» і вантажного корабля «Прогрес»" target="_self" pan="87.4454" skinid="video" url="javascript:openVideo('MTQzOTkwMTY4MA');" id="Pirs" tilt="-21.58"/>
+</hotspots>
+<media/>
+<input width="3353" height="3353" leveltilesize="512" levelbias="0.400" overlap="1" leveltileurl="tiles/FBG_Panorama-6-9_sRGB_tonemapped/c%c_l%r_%y_%x.jpg">
+<level width="3353" height="3353" preload="0"/>
+<level width="1677" height="1677" preload="0"/>
+<level width="839" height="839" preload="0"/>
+<level width="209" preview="1" height="209" preload="1"/>
+<preview color="0x808080"/>
+</input>
+<control simulatemass="1" lockedmouse="0" lockedkeyboard="0" dblclickfullscreen="0" invertwheel="0" lockedwheel="0" invertcontrol="1" speedwheel="1" sensitivity="8"/>
+</panorama>
+<panorama id="node10" hideabout="1">
+<view fovmode="0" pannorth="0">
+<start pan="2.5" fov="70" tilt="-11"/>
+<min pan="0" fov="5" tilt="-90"/>
+<max pan="360" fov="70" tilt="90"/>
+</view>
+<userdata title="Віртуальний тур МКС 1.0" datetime="" description="Zvezda (Зірка) — SM" copyright="" tags="" author="ESA" source="" comment="" info="" longitude="" latitude=""/>
+<hotspots width="180" height="0" wordwrap="1">
+<label width="180" backgroundalpha="1" enabled="1" height="0" backgroundcolor="0xffffff" bordercolor="0x000000" border="1" textcolor="0x000000" background="1" borderalpha="1" borderradius="1" wordwrap="1" textalpha="1"/>
+<polystyle mode="0" backgroundalpha="0.2509803921568627" backgroundcolor="0x0000ff" bordercolor="0x0000ff" borderalpha="1"/>
+<hotspot title="Перейти до Zarya (Зоря)" target="266/-7.5/70" pan="-177.98" skinid="goup" url="{node9}" id="GotoZarya" tilt="-7.55145"/>
+<hotspot title="Зона харчування" target="_self" pan="47.3223" skinid="video" url="javascript:openVideo('MTQzOTkwMzcxNg');" id="Diningarea" tilt="-14.9479"/>
+<hotspot title="Туалет" target="_self" pan="7.81131" skinid="video" url="javascript:openVideo('MTQzOTkwMzYxNg');" id="toilet" tilt="-6.27578"/>
+<hotspot title="Командний центр Міжнародної космічної станції" target="_self" pan="-178.647" skinid="video" url="javascript:openVideo('MTQzOTkwMzk5NQ');" id="bridge" tilt="-19.1719"/>
+<hotspot title="Відвідати модуль MRM-2" target="_self" pan="-177.94" skinid="video" url="javascript:openVideo('MTQzOTkwMTIwNg');" id="mrm2" tilt="-0.985698"/>
+<hotspot title="Сюди стикувалися європейські вантажні кораблі ATV (Automated Transfer Vehicle)" target="_self" pan="-0.460372" skinid="video" url="javascript:openVideo('MTQ0MDUxNTg3Nw');" id="atv" tilt="-0.757819"/>
+<hotspot title="Стикування останнього ATV" target="_self" pan="172.59" skinid="video" url="javascript:openVideo('MTQ0MDUxNTkyMw');" id="dockingatv" tilt="-19.0249"/>
+<hotspot title="Юрій Гагарін" target="_self" pan="8.68158" skinid="html" url="javascript:openUrl('http://www.esa.int/About_Us/Welcome_to_ESA/ESA_history/50_years_of_humans_in_space/Yuri_Gagarin');" id="gagarin" tilt="16.8182"/>
+<hotspot title="Сергій Корольов" target="_self" pan="-10.0538" skinid="html" url="javascript:openUrl('http://www.esa.int/About_Us/Welcome_to_ESA/ESA_history/50_years_of_humans_in_space/Sergei_Korolev_Father_of_the_Soviet_Union_s_success_in_space');" id="korolev" tilt="16.3784"/>
+<hotspot title="Космонавт Геннадій Падалка" target="_self" pan="23.7055" skinid="html" url="javascript:openUrl('http://en.federalspace.ru/1589/');" id="padalka" tilt="-4.04256"/>
+</hotspots>
+<media/>
+<input width="3353" height="3353" leveltilesize="512" levelbias="0.400" overlap="1" leveltileurl="tiles/Zvezda-SM Panorama3_0/c%c_l%r_%y_%x.jpg">
+<level width="3353" height="3353" preload="0"/>
+<level width="1677" height="1677" preload="0"/>
+<level width="839" height="839" preload="0"/>
+<level width="209" preview="1" height="209" preload="1"/>
+<preview color="0x808080"/>
+</input>
+<control simulatemass="1" lockedmouse="0" lockedkeyboard="0" dblclickfullscreen="0" invertwheel="0" lockedwheel="0" invertcontrol="1" speedwheel="1" sensitivity="8"/>
+</panorama>
+</tour>

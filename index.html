@@ -1,108 +1,195 @@
 <!DOCTYPE html>
 <html lang="uk">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Віртуальний тур МКС — Модуль «Колумб» (Українською)</title>
-    
-    <!-- Бібліотека Pannellum для 360-панорам -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css"/>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>Віртуальний тур МКС 1.0 (українською)</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, minimal-ui" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        html, body {
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-            background-color: #0b0b0b;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        #panorama {
-            width: 100%;
-            height: 100%;
-        }
-        .header-bar {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 50px;
-            background: rgba(0, 15, 30, 0.9);
-            color: #ffffff;
-            padding: 10px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            z-index: 10;
-            border-bottom: 1px solid rgba(0, 170, 255, 0.4);
-        }
-        .header-bar h1 {
-            font-size: 16px;
-            color: #00aaff;
-        }
-        .header-bar span {
-            font-size: 13px;
-            color: #cccccc;
-        }
-    </style>
-</head>
-<body>
+		<script type="text/javascript" src="swfobject.js"></script>
+		<script type="text/javascript">
+			function hideUrlBar() {
+				// hide URL field on the iPhone/iPod touch
+				var p = String(navigator.platform);
 
-    <div class="header-bar">
-        <h1>Науковий модуль «Колумб» (Columbus) — МКС</h1>
-        <span>Європейське космічне агентство (ESA) • Українська версія</span>
-    </div>
+				container = document.getElementById("container");
+				if( p === 'iPad' || p === 'iPhone' || p === 'iPod touch' ){
+					var v = (navigator.appVersion).match(/OS (\d+)_(\d+)_?(\d+)?/);
+					if (parseInt(v[1], 10)>=7) {
+						// iOS >=7
+						if (container) {
+							container.style.top=(0) + "px";
+							container.style.left=(0) + "px";
+							container.style.width=(window.innerWidth) + "px";
+							container.style.height=(window.innerHeight) + "px";
+							if (pano) {
+								pano.setViewerSize(window.innerWidth, window.innerHeight);
+							}
+						}
+						window.scrollTo(0, 0);
+					} else {
+						if (container) {
+							var cheight;
+							switch(window.innerHeight) {
+								case 208:cheight=268; break; // landscape
+								case 260:cheight=320; break; // landscape, fullscreen
+								case 336:cheight=396; break; // portrait, in call status bar
+								case 356:cheight=416; break; // portrait
+								case 424:cheight=484; break; // portrait iPhone5, in call status bar
+								case 444:cheight=504; break; // portrait iPhone5
+								default: cheight=window.innerHeight;
+							}
+							if ((cheight) && ((container.offsetHeight!=cheight) || (window.innerHeight!=cheight))) {
+								container.style.height=cheight + "px";
+							}
+						}
+						document.getElementsByTagName("body")[0].style.marginTop="1px";
+						window.scrollTo(0, 1);
+					}
+				}
+			}
+			if (window.addEventListener) {
+				window.addEventListener("load", hideUrlBar);
+				window.addEventListener("resize", hideUrlBar);
+				window.addEventListener("orientationchange", hideUrlBar);
+			}
+		</script>
 
-    <div id="panorama"></div>
+		<script type="text/javascript">
+			// GitHub Pages працює через HTTPS, тому змішаний вміст (http://) блокується браузером.
+			function toHttps(u) { return String(u).replace(/^http:\/\//i, 'https://'); }
 
-    <script>
-        pannellum.viewer('panorama', {
-            "type": "equirectangular",
-            "panorama": "https://upload.wikimedia.org/wikipedia/commons/8/87/Columbus_module_inside_ISS_360_panorama.jpg",
-            "autoLoad": true,
-            "autoRotate": -1.5,
-            "compass": true,
-            "hfov": 100,
-            
-            "hotSpots": [
-                {
-                    "pitch": 5,
-                    "yaw": -35,
-                    "type": "info",
-                    "text": "Лабораторія Biolab: біологічні експерименти з мікроорганізмами, клітинами та рослинами в умовах невагомості."
-                },
-                {
-                    "pitch": -8,
-                    "yaw": 15,
-                    "type": "info",
-                    "text": "Лабораторія фізики рідин (Fluid Science Laboratory - FSL): дослідження поведінки та динаміки рідин."
-                },
-                {
-                    "pitch": 2,
-                    "yaw": 75,
-                    "type": "info",
-                    "text": "Європейська стійка для експериментів (EDR): багатоцільова науково-дослідна платформа."
-                },
-                {
-                    "pitch": -12,
-                    "yaw": -120,
-                    "type": "info",
-                    "text": "Стійка фізіології людини (European Physiology Module - EPM): вивчення впливу космічного польоту на організм людини."
-                },
-                {
-                    "pitch": 15,
-                    "yaw": -150,
-                    "type": "info",
-                    "text": "Робоча зона астронавтів: ноутбуки управління, комунікаційні панелі та системи життєзабезпечення."
-                }
-            ]
-        });
-    </script>
+			function openVideo(id) {
+				var ss = '<div><iframe src="https://wsn.spaceflight.esa.int/php/seidvideo.php?seid=' + id + '" width="700" height="430" style="border:0;overflow:hidden;" scrolling="no"></iframe></div>';
+				ss += '<div style="text-align:center;color:white;padding-top:10pt;font-weight:normal;font-size:12px;cursor:pointer"><a href="javascript:closeVideo();" style="color:white">ЗАКРИТИ</a></div>';
+				if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+					var win = window.open('https://wsn.spaceflight.esa.int/?v='+ id, '_blank');
+					if (win) win.focus();
+				}
+				else {
+					var ref = document.getElementById("ibvwp");
+					ref.innerHTML = ss;
+					ref.style.display = "block";
+				}
+			}
 
-</body>
+			function closeVideo() {
+				var ref = document.getElementById("ibvwp");
+				ref.style.display = "none";
+				ref.innerHTML = "";
+			}
+			function openTab(id) {
+				var win = window.open(id, '_blank');
+				if (win) win.focus();
+			}
+			function openUrl(id) {
+				id = toHttps(id);
+				var ss = '<div><iframe src="' + id + '" width="700" height="430" style="border:0;overflow:hidden;" scrolling="yes"></iframe></div>';
+				ss += '<div style="text-align:center;color:white;padding-top:10pt;font-weight:normal;font-size:12px;cursor:pointer"><a href="javascript:closeVideo();" style="color:white">ЗАКРИТИ</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:openTab(\''+id+'\');" style="color:white">НА ВЕСЬ ЕКРАН</a></div>';
+				if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+					var win = window.open(id, '_blank');
+					if (win) win.focus();
+				}
+				else {
+					var ref = document.getElementById("ibvwp");
+					ref.innerHTML = ss;
+					ref.style.display = "block";
+				}
+			}
+		</script>
+		<style type="text/css">
+			#ibvwp {
+				display:none;
+				background-color:rgba(0, 0, 0, 0.5);
+				padding:10pt 10pt 10pt 10pt;
+				position:fixed;
+				top:50px;
+				left:50px;
+				font-family:"Helvetica";
+				z-index:10000;
+			}
+		</style>
+
+		<style type="text/css" title="Default">
+			body, div, h1, h2, h3, span, p {
+				font-family: Verdana,Arial,Helvetica,sans-serif;
+				color: #000000;
+			}
+			html { height:100%; }
+			body {
+				height:100%;
+				margin: 0px;
+				overflow:hidden; /* disable scrollbars */
+				font-size: 10pt;
+				background : #ffffff;
+			}
+			table,tr,td {
+				font-size: 10pt;
+				border-color : #777777;
+				background : #dddddd;
+				color: #000000;
+				border-style : solid;
+				border-width : 2px;
+				padding: 5px;
+				border-collapse:collapse;
+			}
+			h1 { font-size: 18pt; }
+			h2 { font-size: 14pt; }
+			.warning { font-weight: bold; }
+			/* fix for scroll bars on webkit & Mac OS X Lion */
+			::-webkit-scrollbar {
+				background-color: rgba(0,0,0,0.5);
+				width: 0.75em;
+			}
+			::-webkit-scrollbar-thumb {
+				background-color:  rgba(255,255,255,0.5);
+			}
+		</style>
+	</head>
+	<body>
+		<script type="text/javascript" src="pano2vr_player.js"></script>
+		<script type="text/javascript" src="skin.js"></script>
+		<div id="container" style="width:100%;height:100%;">
+		Для цього вмісту потрібні HTML5/CSS3, WebGL або Adobe Flash Player версії 9 чи новішої.
+		</div>
+		<script type="text/javascript">
+
+		// check for CSS3 3D transformations and WebGL
+		if (ggHasHtml5Css3D() || ggHasWebGL()) {
+			// use HTML5 panorama
+			pano=new pano2vrPlayer("container");
+			skin=new pano2vrSkin(pano);
+			// завантажуємо українську конфігурацію туру
+			pano.readConfigUrl("ISS1.0_uk.xml");
+			setTimeout(function() { hideUrlBar(); }, 10);
+		} else
+		if (swfobject.hasFlashPlayerVersion("10.0.0")) {
+			var flashvars = {};
+			var params = {};
+			flashvars.externalinterface="1";
+			params.quality = "high";
+			params.bgcolor = "#ffffff";
+			params.allowscriptaccess = "sameDomain";
+			params.allowfullscreen = "true";
+			var attributes = {};
+			attributes.id = "pano";
+			attributes.name = "pano";
+			attributes.align = "middle";
+			flashvars.skinxml="skin.xml";
+			flashvars.panoxml="ISS1.0_uk.xml";
+			params.base=".";
+			swfobject.embedSWF(
+				"pano2vr_player.swf", "container",
+				"100%", "100%",
+				"9.0.0", "",
+				flashvars, params, attributes);
+		}
+		</script>
+		<noscript>
+			<p><b>Будь ласка, увімкніть JavaScript!</b></p>
+		</noscript>
+		<div id="ibvwp"></div>
+	</body>
 </html>
